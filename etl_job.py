@@ -14,7 +14,7 @@ def transform_data(input_path, output_path):
   spark.stop()
 
 
-if__name__ == "__main__":
+if __name__ == "__main__":
     input_path = "data/input.csv"
     output_path = "data/output"
     transform_data(input_path, output_path)
