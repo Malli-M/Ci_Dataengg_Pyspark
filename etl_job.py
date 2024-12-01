@@ -15,7 +15,7 @@ def transform_data(input_path, output_path):
     # Load: Write the transformed data to CSV
     transformed_df.write.mode("overwrite").csv(output_path, header=True)
     
-    # Stop Spark session after all operations
+    #Stop Spark session after all operations
     spark.stop()
 
 if __name__ == "__main__":
