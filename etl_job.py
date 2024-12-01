@@ -10,7 +10,7 @@ def transform_data(input_path, output_path):
                     .withColumn("double_amount", col("amount")*2)
                  )
   #load: write the transfomred data to CSV
-  transformred_df.write.mode("overwrite").csv(ouput_path, header=True)
+  transformred_df.write.mode("overwrite").csv(output_path, header=True)
   spark.stop()
 
 
