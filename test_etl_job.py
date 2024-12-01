@@ -5,7 +5,7 @@ import os
 
 @pytest.fixture(scope="module")
 def spark():
-    return SparkSessiona.builder.master("local").appName("Test ETL").getOrCreate()
+    return SparkSession.builder.master("local").appName("Test ETL").getOrCreate()
 
 def test_transform_data(spark, tmp_path):
     input_path = tmp_path / "input.csv"
